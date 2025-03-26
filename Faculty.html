@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Faculty Portal - CSU AI-Free Testing Center</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #990000;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+    header img {
+      height: 60px; /* Adjust as needed */
+      margin-right: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+    nav {
+      background: #e0e0e0;
+      padding: 10px 20px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin-right: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 40px;
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-top: 0;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input[type="file"],
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    .submit-btn {
+      margin-top: 20px;
+      background: #990000;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .submit-btn:hover {
+      background: #b30000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="csu-logo.png" alt="CSU Logo" />
+    <h1>CSU AI-Free Testing Center</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="faculty.html">Faculty Portal</a></li>
+      <li><a href="student.html">Student Portal</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <section>
+      <h2>Faculty Portal</h2>
+      <p>Upload exams, set reservation windows, and specify exam format.</p>
+      <form>
+        <label for="exam-file">Upload Exam File (PDF, DOC, etc.):</label>
+        <input type="file" id="exam-file" name="exam-file" />
+
+        <label for="reservation-window">Reservation Window (e.g., "Sept 1 - Sept 10"):</label>
+        <input type="text" id="reservation-window" name="reservation-window" placeholder="e.g., Sept 1 - Sept 10" />
+
+        <label for="exam-type">Exam Type:</label>
+        <select id="exam-type" name="exam-type">
+          <option value="paper">Paper</option>
+          <option value="internet-free-laptop">Internet-Free Laptop</option>
+          <option value="ai-free-laptop">AI-Free Laptop</option>
+        </select>
+
+        <button class="submit-btn" type="button">Submit Exam Settings</button>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
